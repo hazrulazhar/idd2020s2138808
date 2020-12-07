@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-display: swap;
+    font-family: CCSymbols;
+    font-synthesis: none;
+    src: url(fonts/CCSymbols.woff2) format(woff2),
+         url(fonts/CCSymbols.woff)  format(woff);
+    unicode-range: u+a9, u+229c,
+                   u+1f10d-f, u+1f16d-f;
+  }
+
+html {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    display: inline-grid;
+    justify-self: center;
+    padding: 0;
+    left: 0;
+    top: 0;
+    margin: auto auto;
+    font-family: 'Montserrat',
+               sans-serif,
+               CCSymbols;
+}
+
+h2 {
+    font-family: 'Teko', sans-serif;
+}
+
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 0.5em;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: center;
+    height: 100%;
+}
+
+.gallery img, .gallery video {
+    width: 90%;
+}
+
+.gallery video {
+    text-align: center;
+    margin: auto auto;
+}
+
+.btn {
+    position: relative;
+    width: 181px;
+    height: 42px;
+    left: 10px;
+    top: -20px;
+    background: #E5E5E5;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn a {
+    position: relative;
+    top: 2px;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+/* Header Top */
+#header-top {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    left: auto;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+/* uoed_logo */
+.header-top-logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 0px;
+    background: url(images/uoed_logo.png); 
+    background-repeat: no-repeat;
+    background-size: 30px 30px;      
+    float: left;
+}
+
+/* A University of Edinburgh Student Project Website */
+.header-top-text {
+    position: relative;
+    max-width: 350px;
+    height: 10px;
+    left: 20px;
+    top: 10px;
+    
+    font-style: Rockwell;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    float: left;
+}
+
+/* Header Main */
+
+#header-main {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    left: auto;
+    top: 0;
+    background: #002D72;
+}
+
+/* menu */
+
+.hamburger-menu {
+    position: relative;
+    height: 20px;
+    float: left;
+    padding: 12px;
+}
+
+.menu {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -2px;
+    padding: 0;
+    margin: 0;
+
+    background: #002D72;
+}
+
+.menu:hover {
+    display: inline-table;
+}
+
+.open-menu {
+    display: inline-table;
+    
+}
+
+
+.menu ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    color: #FFEE59;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+
+.menu ul li a, .menu ul li a:visited {
+    color: #FFEE59;
+}
+
+/* easternseaboard2146 */
+#header-main h1 {
+    position: relative;
+    float: left;  
+    padding: 10px;     
+    left: -10px; 
+    top: 4px;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 4.5px;
+    color: #A8D5FB;
+}
+
+#header-main a:visited, #header-main a {
+    color: #A8D5FB;
+    text-decoration: none;
+}
+
+#header-main h1 a:visited .two146 {
+    color: #FFEE59;
+}
+
+/* Main Body */
+#main {
+    position: relative;
+    display: inline-grid;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+#content {
+    position: relative;
+    display: inline-grid;
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 100px !important;
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 10px;
+    background-color: #111730;
+    color: #ffffff;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 0 10px 0 #ffffff;
+}
+
+#content span img {
+    display: block;
+    text-align: center;
+}
+
+#content h2 {
+    font-size: 25px;
+}
+
+#content img {
+    width: 90%;
+    text-align: center;
+    margin: auto auto;
+    margin-bottom: 20px;
+}
+
+
+/* Hero */
+
+#hero {
+    position: relative;
+    min-width: 375px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 0 0;
+    background-color: #021983;
+    background-blend-mode: multiply;
+}
+
+#videobg {
+    object-fit: cover;
+    width: 150vw;
+    height: 150vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: contrast(0.6);
+}
+
+#hero-sub {
+    position: relative;
+    height: 75px;
+    top: 110px;
+}
+
+#hero-sub-cover {
+    position: relative;
+    min-width: 375px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 10px;
+    background: url(images/hero1.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 0 500px;
+    background-blend-mode: multiply;
+}
+
+.background-cover {
+    background: url(images/background-hero.jpg) !important;
+}
+
+.inspiration-cover {
+    background: url(images/obama-hope.jpg) !important;
+}
+
+.money-cover {
+    background: url(images/money-hero.png) !important;
+}
+
+.identity-cover {
+    background: url(images/identity-hero.png) !important;
+}
+
+.report-cover {
+    background: url(images/report-hero.jpg) !important;
+}
+
+.propaganda-cover {
+    background: url(images/propaganda-hero.png) !important;
+}
+
+.credits-cover {
+    background: url(images/credits-hero.jpg) !important;
+}
+
+.bgcover {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: 50% 50%;
+    background-color: rgba(0,123,255,0.6) !important;
+    background-blend-mode: multiply !important;
+    resize: both;
+}
+
+/* Welcome to the Eastern Seaboard */
+
+.hero-title {
+    position: relative;
+    width: 250px;
+    height: 75.54px;
+    left: 10px;
+    top: 27.55px;
+
+    font-style: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+}
+
+#hero-sub > .hero-title {
+    top: 25%;
+}
+
+
+/* Read about the background story of how the world is like in 2146 */
+
+.hero-sub-title {
+    position: relative;
+    width: 347px;
+    left: 10px;
+    top: 20px;
+
+    font-style: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+.hero-sub-title a {
+    color: #ffffff;
+}
+
+/* Section-Home Content */
+
+.home-content {
+    position: relative;
+    display: block;
+    justify-self: center;
+    min-width: 350px;
+    /*height: 223px;*/
+    height: 250px;
+    margin-bottom: 0;
+    padding: 10px;
+
+    background: #A8D5FB;
+    clear: both;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 5px 0 #000000;
+}
+
+.home-content h2 {
+    left: 10px;
+    top: 7px;
+    
+    font-style: Open Sans;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+    /* identical to box height, or 80% */
+
+
+    color: #000000;
+
+}
+
+.home-content .section-img {
+    position: absolute;
+    width: 350px;
+    height: 131px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.home-content .section-img img {
+    position: absolute;
+    width: 350px;
+    top: 0;
+}
+
+.home-content p {
+    position: absolute;
+    width: 333px;
+    height: auto;
+    left: 10px;
+    top: 170px;
+    
+    font-style: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* or 160% */
+    color: #000000;
+}
+
+/* Section-Shop */
+.home-report {
+    position: relative;
+    display: inline-grid;
+    min-width: 375px;
+    height: 223px;
+    background: #A8D5FB;
+    background: url(images/report.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 0 60%;
+    background-color: #004085;
+    background-blend-mode: darken;
+    box-shadow: 0 0 20px 0 #000000;
+}
+
+.home-report h2 {
+    /* Shop */
+    position: relative;
+    margin-left: 15px;
+    top: 25px;
+
+    font-style: Open Sans;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 16px;
+    /* identical to box height, or 80% */
+
+    color: #FFFFFF;
+}
+
+/* Support us! Buy official merchandise of The Eastern Seaboard Government */
+.home-report p {
+    position: relative;
+    margin-left: 15px;
+    
+    font-style: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 156% */
+
+
+    color: #FFFFFF;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    display: inline-grid;
+    /*min-width: 375px;*/
+    height: 260px;
+    padding: 10px;
+
+    background: #000000;   
+    text-align: center; 
+}
+
+/* socmed */
+footer#footer .socmed {
+    position: relative;
+    width: auto;
+    height: 32px;
+    margin: auto auto;
+}
+
+footer#footer .socmed img {
+    width: 32px;
+    height: 32px;
+}
+
+/* COIN Gov */
+footer#footer .coingov {
+    position: relative;
+    width: 308px;
+    height: 88px;
+    margin: auto auto;
+}
+
+footer#footer .copyright {
+    position: relative;
+    display: inline-grid;
+    margin: auto auto;
+
+    font-style: Rockwell;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 25%);
+        grid-gap: 0.1em;
+        justify-content: center;
+        padding: 10px;
+        padding-bottom: 0 !important;
+      }
+
+    #hero {
+        background-position: 0 550px;
+        text-align: center;
+        justify-content: center;
+        background-attachment: fixed;
+    }
+
+    #videobg {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        filter: brightness(0.4);
+    }
+
+    .hero-title, .hero-sub-title {
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        margin: auto auto;
+    }
+
+    .hero-title {
+        top: 30%;
+        left: 0 !important;
+    }
+
+    #hero-sub > .hero-title {
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .hero-sub-title {
+        top: 34%;
+        left: 0 !important;
+    }
+
+    /* Section-Shop */
+    .home-report {
+        text-align: center;
+        background-attachment: fixed !important;
+    }
+
+    .home-report h2 {
+        top: 45px;
+        left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* Support us! Buy official merchandise of The Eastern Seaboard Government */
+    .home-report p {
+        top: 20px;
+        margin-left: 0 !important;
+    }
+
+    .btn {
+        text-align: center;
+        margin: auto auto;
+        top: -20px;
+        left: 0 !important;
+    }
+
+    #content {
+        font-size: 15px !important;
+        display: block !important;
+    }
+
+    #content img {
+        float: left;
+        width: 45%;
+        margin: 10px;
+        vertical-align: top;
+    }
+
+    #content img:first-of-type {
+        float: left !important;
+        width: 45%;
+        margin: 10px;
+        vertical-align: top;
+    }
+
+    #content img:nth-of-type(even) {
+        float: right;
+        width: 45%;
+        margin: 10px;
+        vertical-align: top;
+        clear: both;
+    }
+
+    #content img:nth-of-type(odd) {
+        float: none;
+        clear: both;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .menu {
+        display: inline-table !important;
+        position: relative;
+        float: right;
+        width: 80%;
+        height: auto !important;
+        left: 400px !important;
+        right: 0 !important;
+        top: -50px;
+        padding: 0;
+        margin: 0;
+    
+        background: #002D72;
+    }
+
+    .menu ul li {
+        display: inline;
+        position: relative;
+        float: left;
+        width: auto;
+        height: 40px;
+        padding: 10px;
+        margin: 0;
+        top: 2px;
+        text-align: center;
+    }
+
+    #header-main h1 {
+        left: 5px !important;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
+        height: 480px !important;
+    }
+
+    .gallery * {
+        width: 100% !important;
+        height: auto;
+        padding: 10px;
+    }
+
+    .gallery video {
+        height: 98% !important;
+    }
+
+  }
